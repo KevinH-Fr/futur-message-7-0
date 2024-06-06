@@ -2,6 +2,10 @@
 <p>Find me in app/views/home/index.html.erb</p>
 
 
-    <div data-controller="hellotest">
-      <!-- The text will be added here -->
-    </div>
+<div data-controller="hello">
+  <input data-hello-target="name" type="text">
+
+  <button data-action="click->hello#greet">Greet</button>
+
+  <span data-hello-target="output"></span>
+</div>
